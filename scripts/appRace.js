@@ -1,45 +1,70 @@
 console.log("Sanity Check: JS is working!");
 
+
+
 $(document).ready(function(){
 
-  //targeting the document window. On'keydown', variable "element" is passed through the function.
+  //targeting the document window. On'keydown', variable "keyPlay" is passed through the function.
   $(document).keydown(function(keyPlay){
+    keyPlay.preventDefault();
+    // controls for player 1.
+    var x;
+    var y;
+
     if(keyPlay.keyCode === 65){
-      console.log('A was pressed');
-
-      $("#theimage").stop().animate({
+      //console.log('A was pressed');
+      //if keyboard letter "A" is pressed, top left position of #theimage will move 100px over
+      $("#theimage").animate({
       left: '+=100'
       });
+      //get's position for player 1
+      var locationP1 = $("#theimage").position();
+      x = parseInt(locationP1.left);
 
-      locationX = $("#theimage").position();
-      console.log(locationX);
-
-      locationX2 = $("#theimage2").position();
-      console.log(locationX2);
-
-      if (locationX.left >= 1000){
-        alert("Player 1 is the Winner");
-      }
-      if (locationX2.left >= 1000){
-        alert("Player 2 is the Winner");
-      }
-
-
+      //console.log(x);
     }
+
+    //controls for player 2
     if(keyPlay.keyCode === 76){
-      console.log('L was pressed');
-      $("#theimage2").stop().animate({
+      //console.log('L was pressed');
+      $("#theimage2").animate({
       left: '+=100'
       });
+      //get's position for player 2
+      var locationP2 = $("#theimage2").position();
+      y = parseInt(locationP2.left);
+      //console.log(y);
     }
+    //console.log("values", x,y);
+
+    //Controls for resting the game
     if(keyPlay.keyCode === 32){
       console.log('space bar was pressed');
-      /*$("#theimage2").stop().animate({
-      left: '+=50'
-    });*/
-    }
-  })
+
+      /*$("#theimage1").css({
+        "position": "relative",
+        "left": "0"*/
+      }
+
+    //console.log("x is", x);
+  //  console.log("y is", y);
+
+    /*if(x>y){
+      $(".message").text("Player 1 is winning");
+    }else if (y<x)
+        {
+          $(".message").text("Player 2 is winning");
+        }
+    */
+  });
 })
+
+
+
+
+
+
+
 //function can be listener or handler
 
 //assign a keys a right, l is right.
