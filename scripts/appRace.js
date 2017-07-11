@@ -3,13 +3,13 @@ console.log("Sanity Check: JS is working!");
 
 
 $(document).ready(function(){
-
+  var x;
+  var y;
   //targeting the document window. On'keydown', variable "keyPlay" is passed through the function.
   $(document).keydown(function(keyPlay){
     keyPlay.preventDefault();
     // controls for player 1.
-    var x;
-    var y;
+
 
     if(keyPlay.keyCode === 65){
       //console.log('A was pressed');
@@ -32,18 +32,23 @@ $(document).ready(function(){
       });
       //get's position for player 2
       var locationP2 = $("#theimage2").position();
-      y = parseInt(locationP2.left);
+      //y = parseInt(locationP2.left);
       //console.log(y);
     }
     //console.log("values", x,y);
 
     //Controls for resting the game
     if(keyPlay.keyCode === 32){
-      console.log('space bar was pressed');
-
-      /*$("#theimage1").css({
+      //resets player 1 to starting position
+      $("#theimage").css({
+        "position": "absolute",
+        "left": "0"
+      });
+      $("#theimage2").css({
         "position": "relative",
-        "left": "0"*/
+        "left": "0"
+      });
+        console.log('space bar was pressed');
       }
 
     //console.log("x is", x);
