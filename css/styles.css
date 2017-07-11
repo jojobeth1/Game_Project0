@@ -1,14 +1,24 @@
 .container{
   border: 1px solid red;
-  width: 1200px;
   height: auto;
+  width: 1200px;
+  background: blue;
 }
 
-
-.row {
+.score{
+  font-size: 18px;
   background-color: black;
-  height: 100px;
-  margin-top: 100px;
+  border-radius: 6px;
+  width: 500px;
+  margin: 0 auto;
+}
+.row {
+  background-color: gray;
+  height: 200px;
+  margin-top: 20px;
+}
+img {
+  vertical-align: middle;
 }
 #theimage {
   position: relative;
@@ -26,4 +36,7 @@ h1{
 .message{
   font-weight:bold;
   text-align: center;
+}
+.col-sm-1{
+   line-height: 200px;
 }

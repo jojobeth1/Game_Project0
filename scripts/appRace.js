@@ -15,7 +15,7 @@ $(document).ready(function(){
       //console.log('A was pressed');
       //if keyboard letter "A" is pressed, top left position of #theimage will move 100px over
       $("#theimage").animate({
-      left: '+=100'
+      left: '+=50'
       });
       //get's position for player 1
       var locationP1 = $("#theimage").position();
@@ -28,7 +28,7 @@ $(document).ready(function(){
     if(keyPlay.keyCode === 76){
       //console.log('L was pressed');
       $("#theimage2").animate({
-      left: '+=100'
+      left: '+=50'
       });
       //get's position for player 2
       var locationP2 = $("#theimage2").position();
