@@ -1,10 +1,11 @@
 console.log("Sanity Check: JS is working!");
 
-
+var locationP1;
+var locationP2;
 
 $(document).ready(function(){
-  var x;
-  var y;
+
+
   //targeting the document window. On'keydown', variable "keyPlay" is passed through the function.
   $(document).keydown(function(keyPlay){
     keyPlay.preventDefault();
@@ -14,7 +15,7 @@ $(document).ready(function(){
     if(keyPlay.keyCode === 65){
       //console.log('A was pressed');
       //if keyboard letter "A" is pressed, top left position of #theimage will move 100px over
-      $("#theimage").animate({
+      $("#theimage").stop().animate({
       left: '+=50'
       });
       //get's position for player 1
@@ -27,7 +28,7 @@ $(document).ready(function(){
     //controls for player 2
     if(keyPlay.keyCode === 76){
       //console.log('L was pressed');
-      $("#theimage2").animate({
+      $("#theimage2").stop().animate({
       left: '+=50'
       });
       //get's position for player 2
@@ -41,7 +42,7 @@ $(document).ready(function(){
     if(keyPlay.keyCode === 32){
       //resets player 1 to starting position
       $("#theimage").css({
-        "position": "absolute",
+        "position": "relative",
         "left": "0"
       });
       $("#theimage2").css({

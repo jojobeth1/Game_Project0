@@ -11,7 +11,9 @@
   border-radius: 6px;
   width: 500px;
   margin: 0 auto;
+  height: 100px;
 }
+
 .row {
   background-color: gray;
   height: 200px;
@@ -23,11 +25,13 @@ img {
 #theimage {
   position: relative;
   left: 0px;
+  top: 0px;
 }
 
 #theimage2 {
   position: relative;
   left: 0px;
+  top: 0px;
 }
 
 h1{
@@ -36,6 +40,8 @@ h1{
 .message{
   font-weight:bold;
   text-align: center;
+  font-size: 22px;
+  color: white;
 }
 .col-sm-1{
    line-height: 200px;
