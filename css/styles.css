@@ -1,0 +1,17 @@
+.container{
+  border: 1px solid red;
+  width: 0 auto;
+  height: 900px;
+}
+
+.col-lg-12{border: 1px solid blue;}
+
+.row {
+  border: 1px solid yellow;
+  height: 100px;
+  margin-top: 200px;
+}
+#theimage {
+  position: relative;
+  left: 0px;
+}
