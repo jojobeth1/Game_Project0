@@ -1,5 +1,11 @@
 # Game_Project0
-##About
+Technology used: 
+Google Fonts
+Bootstrap
+jQUery
+Javascript
+
+About
 This game is a simple racing car game. 
 Object of the game is to get to the finish line before the other player. 
 
