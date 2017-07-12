@@ -1,4 +1,5 @@
 # Game_Project0
+##About
 This game is a simple racing car game. 
 Object of the game is to get to the finish line before the other player. 
 
