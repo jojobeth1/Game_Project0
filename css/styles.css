@@ -1,10 +1,50 @@
+body{
+  background: linear-gradient(270deg, #543953, #995297, #c548c1, #ea2de4, #ea2de4);
+  background-size: 1000% 1000%;
+  -webkit-animation: HKrace 25s ease infinite;
+  animation: HKrace 25s ease infinite;
+}
+@-webkit-keyframes HKrace {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes HKrace {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 .container{
   border: 1px solid red;
   height: auto;
   width: 1200px;
-  background: blue;
-}
+  background: white;
+  margin: 25px auto 0 auto;
+  padding-bottom: 50px;
+  border-radius: 6px;
+  box-shadow: 3px 4px 5px 3px #000;
 
+
+}
+.jumbotron{
+  margin-top: 20px;
+  height: 150px;
+  padding: 0;
+  background-color: pink;
+  border: 1px solid red;
+}
+.jumbotron h1{
+  font-size: 150px;
+  letter-spacing: 5px;
+  font-family: 'Jomhuria', cursive;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+h2{
+  font-family: 'Ceviche One', cursive;
+}
 .score{
   font-size: 18px;
   background-color: black;
@@ -15,6 +55,7 @@
 }
 
 .row {
+  background-image: url(../images/road.jpg);
   background-color: gray;
   height: 200px;
   margin-top: 20px;
@@ -34,9 +75,6 @@ img {
   top: 0px;
 }
 
-h1{
-  text-align: center;
-}
 .message{
   font-weight:bold;
   text-align: center;
